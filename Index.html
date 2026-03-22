@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARÉS COM VIDA | Quem Vai ao Mar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Playfair+Display+SC&amp;family=Caveat:wght@400;700&amp;display=swap" rel="stylesheet">
+  <style>
+    .tail { font-family: 'Playfair Display', serif; }
+    .hand { font-family: 'Caveat', cursive; font-size: 1.75rem; line-height: 1.4; }
+    .aged { filter: sepia(25%) contrast(88%) brightness(92%) saturate(85%); }
+    .torn-frame { 
+      border: 14px solid #FFF6E9; 
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25); 
+      background: white; 
+      position: relative;
+    }
+    .torn-frame::before {
+      content: '';
+      position: absolute;
+      top: -8px; left: -8px; right: -8px; bottom: -8px;
+      border: 8px solid #E0F0FF;
+      opacity: 0.3;
+      z-index: -1;
+    }
+    .ocean-bg { background: linear-gradient(to bottom, #003F47 0%, #0A171D 100%); }
+  </style>
+</head>
+<body class="bg-[#FFF6E9] text-[#0A171D] tail">
+
+  <nav class="fixed top-0 w-full bg-[#003F47] text-[#FFF6E9] z-50 py-6 shadow-xl">
+    <div class="max-w-7xl mx-auto px-8 flex justify-between items-center">
+      <h1 class="text-4xl font-bold tracking-widest">MARÉS COM VIDA</h1>
+      <div class="flex gap-10 text-lg font-medium">
+        <a href="#home" class="hover:text-[#FFBD76] transition">Início</a>
+        <a href="#diniz" class="hover:text-[#FFBD76] transition">Vila Real — Diniz</a>
+        <a href="#diogo" class="hover:text-[#FFBD76] transition">Portimão — Diogo</a>
+        <a href="#helio" class="hover:text-[#FFBD76] transition">Olhão — Hélio &amp; Filho</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="min-h-screen ocean-bg flex items-center relative overflow-hidden pt-30">
+    <div class="absolute inset-0 bg-[url('https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE')] bg-cover bg-center opacity-40"></div>
+    
+    <div class="max-w-6xl mx-auto px-8 text-center relative z-10 text-[#FFF6E9]">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-7xl md:text-8xl font-bold mb-6 tracking-tighter">QUEM VAI AO MAR...</h2>
+        <p class="text-4xl font-light mb-12">Cultura da Pesca e Comunidades Costeiras do Algarve</p>
+        
+        <p class="text-2xl max-w-2xl mx-auto leading-relaxed">
+          Indo além da imagem turística.<br>
+          Risco, trabalho, tradição e sobrevivência — contados por quem vive o mar todos os dias.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20">
+        <img src="" class="aged torn-frame rounded-xl" alt="">
+        <img src="" class="aged torn-frame rounded-xl" alt="">
+        <img src="" class="aged torn-frame rounded-xl" alt="">
+        <img src="" class="aged torn-frame rounded-xl" alt="">
+      </div>
+
+      <a href="#diniz" class="inline-block mt-16 px-12 py-5 bg-[#FFBD76] text-[#0A171D] text-xl font-medium rounded-full hover:scale-105 transition">
+        Conhece as histórias →
+      </a>
+    </div>
+  </section>
+
+  <section id="diniz" class="py-28 max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+      <div class="lg:col-span-5">
+        <div class="sticky top-28">
+          <span class="text-[#FFBD76] text-3xl tracking-widest">VILA REAL DE SANTO ANTÓNIO</span>
+          <h2 class="text-6xl font-bold mt-3 mb-8">Diniz</h2>
+          
+          <p class="text-2xl leading-relaxed mb-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <div class="torn-frame p-10 bg-white">
+            <p class="hand text-[#0A171D]">
+              “O mar não me dá dinheiro fácil… mas dá-me uma liberdade que nenhum patrão consegue tirar.”
+            </p>
+            <p class="text-right mt-8 text-sm opacity-70">— Diniz, 2025</p>
+          </div>
+
+          <div class="mt-12 pl-6 border-l-4 border-[#003F47]">
+            <p class="italic text-xl">"Já viram o que os pescadores usam? O que põem a secar na rede lá fora?"</p>
+            <p class="text-sm mt-4">— Coexistência entre roupa, peixe e redes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="grid grid-cols-2 gap-6">
+          <img src="" class="aged torn-frame rounded-2xl" alt="Diniz - foto 1">
+          <img src="" class="aged torn-frame rounded-2xl" alt="Diniz - foto 2">
+          <img src="" class="aged torn-frame rounded-2xl" alt="Diniz - foto 3">
+          <img src="" class="aged torn-frame rounded-2xl" alt="Diniz - foto 4">
+        </div>
+
+        <div class="mt-12 bg-[#003F47] p-8 rounded-3xl">
+          <p class="text-[#FFF6E9] uppercase tracking-widest text-sm mb-4">ENTREVISTA COMPLETA — Duração</p>
+          <iframe width="100%" height="420" 
+                  src="" 
+                  title="Entrevista Diniz" frameborder="0" 
+                  allowfullscreen class="rounded-2xl"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="diogo" class="py-28 bg-[#003F47] text-[#FFF6E9]">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div class="lg:col-span-5">
+          <div class="sticky top-28">
+            <span class="text-[#FFBD76] text-3xl tracking-widest">PORTIMÃO</span>
+            <h2 class="text-6xl font-bold mt-3 mb-8">Diogo</h2>
+            
+            <p class="text-2xl leading-relaxed mb-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="torn-frame p-10 bg-white">
+              <p class="hand text-[#0A171D]">
+                “O mar é grande, mas o meu lugar nele é pequeno e certo.”
+              </p>
+              <p class="text-right mt-8 text-sm opacity-70">— Diogo, 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="grid grid-cols-2 gap-6">
+            <img src="" class="aged torn-frame rounded-2xl" alt="Diogo - foto 1">
+            <img src="" class="aged torn-frame rounded-2xl" alt="Diogo - foto 2">
+            <img src="" class="aged torn-frame rounded-2xl" alt="Diogo - foto 3">
+            <img src="" class="aged torn-frame rounded-2xl" alt="Diogo - foto 4 ">
+          </div>
+
+          <div class="mt-12 bg-[#FFF6E9] p-8 rounded-3xl text-[#0A171D]">
+            <p class="uppercase tracking-widest text-sm mb-4">ENTREVISTA COMPLETA — Duração</p>
+            <iframe width="100%" height="420" 
+                    src="" 
+                    title="Entrevista Diogo" frameborder="0" 
+                    allowfullscreen class="rounded-2xl"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="helio" class="py-28 max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+      <div class="lg:col-span-5">
+        <div class="sticky top-28">
+          <span class="text-[#FFBD76] text-3xl tracking-widest">OLHÃO</span>
+          <h2 class="text-6xl font-bold mt-3 mb-8">Hélio &amp; Filho</h2>
+          
+          <p class="text-2xl leading-relaxed mb-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <div class="torn-frame p-10 bg-white">
+            <p class="hand text-[#0A171D]">
+              “O mar é o mesmo para os dois… só o barco é que mudou.”
+            </p>
+            <p class="text-right mt-8 text-sm opacity-70">— Hélio, 2025</p>
+          </div>
+
+          <div class="mt-12 pl-6 border-l-4 border-[#FFBD76]">
+            <p class="italic text-xl">"Coexistência dos novos pescadores com os velhos"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="grid grid-cols-2 gap-6">
+          <img src="" class="aged torn-frame rounded-2xl" alt="Hélio - foto 1">
+          <img src="" class="aged torn-frame rounded-2xl" alt="Hélio - foto 2">
+          <img src="" class="aged torn-frame rounded-2xl" alt="Hélio - foto 3">
+          <img src="" class="aged torn-frame rounded-2xl" alt="Hélio - foto 4">
+        </div>
+
+        <div class="mt-12 bg-[#0A171D] p-8 rounded-3xl text-[#FFF6E9]">
+          <p class="uppercase tracking-widest text-sm mb-4">ENTREVISTA COMPLETA — Duração</p>
+          <iframe width="100%" height="420" 
+                  src="" 
+                  title="Entrevista Hélio &amp; Filho" frameborder="0" 
+                  allowfullscreen class="rounded-2xl"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#0A171D] text-[#FFF6E9] py-16 text-center">
+    <div class="max-w-4xl mx-auto px-8">
+      <p class="text-2xl font-light">MARÉS COM VIDA © 2026</p>
+      <p class="mt-6 text-lg">Projeto Grupo 12 — Cultura da Pesca e Comunidades Costeiras | Lábia 2026 | Etic Algarve</p>
+      <p class="text-sm mt-10 opacity-70">
+        Inspirado nas histórias reais de Diniz, Diogo e Hélio.<br>
+        Honra a quem vai ao mar todos os dias.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
