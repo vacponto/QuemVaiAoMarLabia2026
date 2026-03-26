@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MARÉS COM VIDA | Quem Vai ao Mar</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Playfair+Display+SC&amp;family=Caveat:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Playfair+Display+SC&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     .tail { font-family: 'Playfair Display', serif; }
     .hand { font-family: 'Caveat', cursive; font-size: 1.75rem; line-height: 1.4; }
+    .helvetica { font-family: 'Helvetica Neue','Helvetica','Arial','sans-serif'; }
     .torn-frame { 
       border: 14px solid #FFFFFF; 
       box-shadow: 0 15px 40px rgba(0,0,0,0.25); 
@@ -57,64 +58,43 @@
   </nav>
 
   <section id="home" class="min-h-screen ocean-bg flex items-center relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-32">
-  <div class="absolute inset-0 bg-[url('https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE')] bg-cover bg-center opacity-40"></div>
-  
-  <div class="max-w-6xl mx-auto px-6 text-center relative z-10 text-[#FFFFFF]">
-    <div class="max-w-3xl mx-auto">
-      <h2 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tighter">QUEM VAI AO MAR...</h2>
-      <p class="text-3xl md:text-4xl font-light mb-12">Cultura da Pesca e Comunidades Costeiras do Algarve</p>
-      
-      <p class="text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
-        Indo além da imagem turística.<br>
-        Risco, trabalho, tradição e sobrevivência — contados por quem vive o mar todos os dias.
-      </p>
-    </div>
+    <div class="absolute inset-0 bg-[url('https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE')] bg-cover bg-center opacity-40"></div>
+    
+    <div class="max-w-6xl mx-auto px-6 text-center relative z-10 text-[#FFFFFF]">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tighter">QUEM VAI AO MAR...</h2>
+        <p class="text-3xl md:text-4xl font-light mb-12">Cultura da Pesca e Comunidades Costeiras do Algarve</p>
+        
+        <p class="text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
+          Indo além da imagem turística.<br>
+          Risco, trabalho, tradição e sobrevivência — contados por quem vive o mar todos os dias.
+        </p>
+      </div>
 
-    <div class="relative mt-16 mx-auto max-w-5xl">
-      <div id="carousel" class="relative overflow-hidden rounded-3xl shadow-2xl">
-        <div id="slides" class="flex transition-transform duration-700 ease-in-out">
-          <img src="/Images/DIOGO8.jpg" 
-               class="w-full flex-shrink-0 object-cover" alt="Pesca no Algarve">
+      <div class="relative mt-16 mx-auto max-w-5xl">
+        <div id="carousel-home" class="relative overflow-hidden rounded-3xl shadow-2xl">
+          <div id="slides-home" class="flex transition-transform duration-700 ease-in-out">
+            <img src="/Images/DIOGO8.jpg" class="w-full flex-shrink-0 object-cover" alt="Pesca no Algarve">
+            <img src="/Images/Hélio-4.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+            <img src="/Images/Hélio-5.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+            <img src="/Images/Hélio-9.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+            <img src="/Images/Hélio-13.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+            <img src="/Images/Hélio-26.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+            <img src="/Images/Hélio-29.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+          </div>
+
+          <button id="prev-home" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl z-10">←</button>
+          <button id="next-home" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl z-10">→</button>
           
-          <img src="/Images/Hélio-4.jpg" 
-               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
-
-          <img src="/Images/Hélio-5.jpg" 
-               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
-
-          <img src="/Images/Hélio-9.jpg" 
-               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
-
-          <img src="/Images/Hélio-13.jpg" 
-               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
-
-          <img src="/Images/Hélio-26.jpg" 
-               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
-               
-          <img src="/Images/Hélio-29.jpg" 
-               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
-          
-        </div>
-
-        <button id="prev" 
-                class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-12 h-12 flex items-center justify-center rounded-full transition text-3xl z-10">
-          ←
-        </button>
-        <button id="next" 
-                class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-12 h-12 flex items-center justify-center rounded-full transition text-3xl z-10">
-          →
-        </button>
-
-        <div id="dots" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+          <div id="dots-home" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10"></div>
         </div>
       </div>
-    </div>
 
-    <a href="#diniz" class="inline-block mt-12 md:mt-20 mb-16 md:mb-24 px-10 py-4 bg-[#FFBD76] text-[#0A171D] text-lg md:text-xl font-medium rounded-full hover:scale-105 transition">
-      Conhece as histórias →
-    </a>
-  </div>
-</section>
+      <a href="#diniz" class="inline-block mt-12 md:mt-20 mb-16 md:mb-24 px-10 py-4 bg-[#FFBD76] text-[#0A171D] text-lg md:text-xl font-medium rounded-full hover:scale-105 transition">
+        Conhece as histórias →
+      </a>
+    </div>
+  </section>
 
   <section id="enquadramento" class="py-20 md:py-32 bg-[#003F47] text-[#FFFFFF] w-full">
     <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
@@ -149,126 +129,162 @@
         <h2 class="text-5xl md:text-6xl font-bold mb-12">A Cultura da Pesca no Algarve</h2>
         <p class="text-xl lg:text-2xl leading-relaxed">
           Do barlavento ao sotavento, a pesca sempre foi uma atividade fulcral no Algarve.
-          Com origens sobretudo artesanais, a pesca era realizada em pequenas embarcações frágeis, com técnicas tradicionais e algo rudimentares passadas de geração em geração, sendo ao longo de séculos a atividade principal e essencial para a comunidade costeira residente na região.
+          Com origens sobretudo artesanais, a pesca era realizada em pequenas embarcações frágeis, com técnicas tradicionais e algo rudimentares passadas de geração em geração.
         </p>
         <p class="text-xl md:text-2xl leading-relaxed mt-8">
-          Hoje em dia, a pesca ainda é uma atividade predominante e de grande importância por todo o Algarve, porém com algumas diferenças. O ofício ainda é muitas vezes passado de geração, mas adaptado à nova legislação e à mais recente realidade econômica, tudo é mais regulamentado e controlado, e enfrentam-se desafios que seriam impensáveis e que foram negligenciados durante décadas a fio, como a preservação da vida e da paisagem marítima.
+          Hoje em dia, a pesca ainda é uma atividade predominante e de grande importância por todo o Algarve, adaptada à nova legislação e aos desafios da preservação marítima.
         </p>
       </div>
     </div>
   </section>
 
-  <section id="diniz" class="py-20 md:py-28 bg-[#003F47] text-[#FFFFFF] w-full">
-    <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        <div class="lg:col-span-5">
-          <div class="lg:sticky lg:top-28">
-            <span class="text-[#FFBD76] text-2xl md:text-3xl tracking-widest">VILA REAL DE SANTO ANTÓNIO</span>
-            <h2 class="text-5xl md:text-6xl font-bold mt-3 mb-8">Dinis</h2>
-            
-            <p class="text-xl md:text-2xl leading-relaxed mb-10">
-               Cidade do Sotavento Algarvio com cerca de 19000 habitantes onde é predominante a pesca da corvina e do robalo, tendo também épocas favoráveis para a enguia.
-            </p>
+ <section id="diniz" class="py-20 md:py-32 bg-[#003F47] text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
-            <div class="torn-frame p-8 md:p-10 bg-white">
-              <p class="hand text-[#0A171D]">
-                “O mar não me dá dinheiro fácil… mas dá-me uma liberdade que nenhum patrão consegue tirar.”
-              </p>
+        <div>
+          <h2 class="text-7xl md:text-8xl font-bold leading-none">Dinis</h2>
+          <p class="text-3xl mt-2 text-white">Vila Real de Santo António</p>
+          
+          <div class="mt-8 space-y-1 text-lg">
+            <p class="helvetica text-white">Cidade do sotavento algarvio com cerca de 19000 habitantes onde é predominante a pesca da corvina e do robalo, tendo também épocas favoráveis para a enguia.
+</p>
+          </div>
+
+          <div class="mt-12">
+            <div id="carousel-dinis" class="relative overflow-hidden rounded-2xl shadow-xl bg-white">
+              <div id="slides-dinis" class="flex transition-transform duration-700 ease-in-out">
+                <img src="/Images/Dinis1.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Dinis">
+                <img src="/Images/Dinis2.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Dinis">
+                <img src="/Images/Dinis3.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Dinis">
+                <img src="/Images/Dinis4.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Dinis">
+              </div>
+              <button id="prev-dinis" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-11 h-11 flex items-center justify-center rounded-full text-3xl">←</button>
+              <button id="next-dinis" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-11 h-11 flex items-center justify-center rounded-full text-3xl">→</button>
             </div>
           </div>
         </div>
 
-        <div class="lg:col-span-7">
-          <div class="grid grid-cols-2 gap-4">
-            <img src="" class="torn-frame rounded-2xl" alt="Dinis - foto 1">
-            <img src="" class="torn-frame rounded-2xl" alt="Dinis - foto 2">
-            <img src="" class="torn-frame rounded-2xl" alt="Dinis - foto 3">
-            <img src="" class="torn-frame rounded-2xl" alt="Dinis - foto 4">
+        <div class="space-y-10">
+          <div class="bg-white aspect-video rounded-2xl flex items-center justify-center relative overflow-hidden">
+            <iframe 
+              width="100%" 
+              height="100%" 
+              src="" 
+              title="Entrevista Dinis" 
+              frameborder="0" 
+              allowfullscreen 
+              class="rounded-2xl">
+            </iframe>
           </div>
 
-          <div class="mt-12 bg-[#FFFFFF] p-8 rounded-3xl text-[#0A171D]">
-            <p class="text-[#003F47] uppercase tracking-widest text-sm mb-4">ENTREVISTA COMPLETA</p>
-            <iframe width="100%" height="420" src="" title="Entrevista Dinis" frameborder="0" allowfullscreen class="rounded-2xl"></iframe>
+          <div class="quote-box bg-white border-2 border-[#0A171D] p-10 max-w-md">
+            <p class="hand text-[#0A171D] italic">
+              “O mar não me dá dinheiro fácil… mas dá-me uma liberdade que nenhum patrão consegue tirar.”
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="diogo" class="py-20 md:py-28 w-full">
-    <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        <div class="lg:col-span-5">
-          <div class="lg:sticky lg:top-28">
-            <span class="text-[#003F47] text-2xl md:text-3xl tracking-widest">PORTIMÃO</span>
-            <h2 class="text-5xl md:text-6xl font-bold mt-3 mb-8">Diogo</h2>
-            
-            <p class="text-xl md:text-2xl leading-relaxed mb-10">
-              Situada no barlavento algarvio, Portimão é das maiores cidades algarvias com cerca de 60000 habitantes. Aqui a pesca é das mais diversificadas da região, mas destaca-se a pesca da sardinha, juntamente com a do linguado e do polvo.
-            </p>
+  <section id="diogo" class="py-20 md:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
-            <div class="torn-frame p-8 md:p-10 bg-white">
-              <p class="hand text-[#0A171D]">
-                “O mar é grande, mas o meu lugar nele é pequeno e certo.”
-              </p>
+        <div>
+          <h2 class="text-7xl md:text-8xl font-bold leading-none">Diogo</h2>
+          <p class="text-3xl mt-2 text-[#003F47]">Portimão</p>
+          
+          <div class="mt-8 space-y-1 text-lg">
+            <p class="helvetica [#003F47]">Situada no barlavento algarvio, Portimão é das maiores cidades algarvias com cerca de 60000 habitantes. Aqui a pesca é das mais diversificadas da região, mas destaca-se a pesca da sardinha, juntamente com a do linguado e do polvo.</p>
+          </div>
+
+          <div class="mt-12">
+            <div id="carousel-diogo" class="relative overflow-hidden rounded-2xl shadow-xl">
+              <div id="slides-diogo" class="flex transition-transform duration-700 ease-in-out">
+                <img src="/Images/Diogo1.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Diogo">
+                <img src="/Images/Diogo2.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Diogo">
+                <img src="/Images/Diogo3.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Diogo">
+                <img src="/Images/Diogo4.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Diogo">
+              </div>
+              <button id="prev-diogo" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-11 h-11 flex items-center justify-center rounded-full text-3xl">←</button>
+              <button id="next-diogo" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-11 h-11 flex items-center justify-center rounded-full text-3xl">→</button>
             </div>
           </div>
         </div>
 
-        <div class="lg:col-span-7">
-          <div class="grid grid-cols-2 gap-4">
-            <img src="" class="torn-frame rounded-2xl" alt="Diogo - foto 1">
-            <img src="" class="torn-frame rounded-2xl" alt="Diogo - foto 2">
-            <img src="" class="torn-frame rounded-2xl" alt="Diogo - foto 3">
-            <img src="" class="torn-frame rounded-2xl" alt="Diogo - foto 4">
+        <div class="space-y-10">
+          <div class="bg-[#003F47] aspect-video rounded-2xl flex items-center justify-center relative overflow-hidden">
+            <iframe 
+              width="100%" 
+              height="100%" 
+              src="" 
+              title="Entrevista Diogo" 
+              frameborder="0" 
+              allowfullscreen 
+              class="rounded-2xl">
+          </iframe>
           </div>
 
-          <div class="mt-12 bg-[#003F47] p-8 rounded-3xl text-[#FFFFFF]">
-            <p class="uppercase tracking-widest text-sm mb-4">ENTREVISTA COMPLETA</p>
-            <iframe width="100%" height="420" src="" title="Entrevista Diogo" frameborder="0" allowfullscreen class="rounded-2xl"></iframe>
+          <div class="quote-box bg-white border-2 border-[#0A171D] p-10 max-w-md">
+            <p class="hand text-[#0A171D] italic">
+              “O mar é grande, mas o meu lugar nele é pequeno e certo.”
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="helio" class="py-20 md:py-28 bg-[#003F47] text-[#FFFFFF] w-full">
-    <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        <div class="lg:col-span-5">
-          <div class="lg:sticky lg:top-28">
-            <span class="text-[#FFBD76] text-2xl md:text-3xl tracking-widest">OLHÃO</span>
-            <h2 class="text-5xl md:text-6xl font-bold mt-3 mb-8">Hélio</h2>
-            
-            <p class="text-xl md:text-2xl leading-relaxed mb-10">
-              O maior centro piscatório algarvio, Olhão, conta com aproximadamente 45000 habitantes. Situada em plena Ria Formosa, a costa olhanense é rica em todo o tipo de marisco, polvo e choco, e também de douradas e sargos.
-            </p>
+  <section id="helio" class="py-20 md:py-32 bg-[#003F47] text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
-            <div class="torn-frame p-8 md:p-10 bg-white">
-              <p class="hand text-[#0A171D]">
-                “O mar é o mesmo para os dois… só o barco é que mudou.”
-              </p>
+        <div>
+          <h2 class="text-7xl md:text-8xl font-bold leading-none">Hélio &amp; Henrique</h2>
+          <p class="text-3xl mt-2 text-white">Olhão</p>
+          
+          <div class="mt-8 space-y-1 text-lg">
+            <p class="helvetica text-white">O maior centro piscatório algarvio, Olhão, conta com aproximadamente 45000 habitantes. Situada em plena Ria Formosa, a costa olhanense é rica em todo o tipo de marisco, polvo e choco, e também de douradas e sargos.</p>
+          </div>
+
+          <div class="mt-12">
+            <div id="carousel-helio" class="relative overflow-hidden rounded-2xl shadow-xl bg-white">
+              <div id="slides-helio" class="flex transition-transform duration-700 ease-in-out">
+                <img src="/Images/Hélio1.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Hélio">
+                <img src="/Images/Hélio2.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Hélio">
+                <img src="/Images/Hélio3.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Hélio">
+                <img src="/Images/Hélio4.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Hélio">
+              </div>
+              <button id="prev-helio" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-11 h-11 flex items-center justify-center rounded-full text-3xl">←</button>
+              <button id="next-helio" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-11 h-11 flex items-center justify-center rounded-full text-3xl">→</button>
             </div>
           </div>
         </div>
 
-        <div class="lg:col-span-7">
-          <div class="grid grid-cols-2 gap-4">
-            <img src="" class="torn-frame rounded-2xl" alt="Hélio - foto 1">
-            <img src="" class="torn-frame rounded-2xl" alt="Hélio - foto 2">
-            <img src="" class="torn-frame rounded-2xl" alt="Hélio - foto 3">
-            <img src="" class="torn-frame rounded-2xl" alt="Hélio - foto 4">
+        <div class="space-y-10">
+          <div class="bg-white aspect-video rounded-2xl flex items-center justify-center relative overflow-hidden">
+            <iframe 
+              width="100%" 
+              height="100%" 
+              src="" 
+              title="Entrevista Hélio" 
+              frameborder="0" 
+              allowfullscreen 
+              class="rounded-2xl">
+          </iframe>
           </div>
 
-          <div class="mt-12 bg-[#FFFFFF] p-8 rounded-3xl text-[#0A171D]">
-            <p class="text-[#003F47] uppercase tracking-widest text-sm mb-4">ENTREVISTA COMPLETA</p>
-            <iframe width="100%" height="420" src="" title="Entrevista Hélio &amp; Filho" frameborder="0" allowfullscreen class="rounded-2xl"></iframe>
+          <div class="quote-box bg-white border-2 border-[#0A171D] p-10 max-w-md">
+            <p class="hand text-[#0A171D] italic">
+              “O mar é o mesmo para os dois… só o barco é que mudou.”
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
   <footer class="bg-[#0A171D] text-[#FFFFFF] py-12 text-center w-full">
     <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
@@ -282,6 +298,7 @@
   </footer>
 
   <script>
+
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
 
@@ -301,61 +318,68 @@
       });
     });
 
-    const slidesContainer = document.getElementById('slides');
-  const prevBtn = document.getElementById('prev');
-  const nextBtn = document.getElementById('next');
-  const dotsContainer = document.getElementById('dots');
+    function initCarousel(slidesId, prevId, nextId, dotsId) {
+      const slidesContainer = document.getElementById(slidesId);
+      const prevBtn = document.getElementById(prevId);
+      const nextBtn = document.getElementById(nextId);
+      const dotsContainer = document.getElementById(dotsId);
 
-  let currentIndex = 0;
-  const totalSlides = slidesContainer.children.length;
+      let currentIndex = 0;
+      const totalSlides = slidesContainer.children.length;
 
-  function createDots() {
-    dotsContainer.innerHTML = '';
-    for (let i = 0; i < totalSlides; i++) {
-      const dot = document.createElement('button');
-      dot.className = `w-4 h-4 rounded-full transition-all ${i === 0 ? 'bg-[#FFBD76] scale-125' : 'bg-white/60 hover:bg-white/80'}`;
-      dot.addEventListener('click', () => goToSlide(i));
-      dotsContainer.appendChild(dot);
+      function createDots() {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+          const dot = document.createElement('button');
+          dot.className = `w-4 h-4 rounded-full transition-all ${i === 0 ? 'bg-[#FFBD76] scale-125' : 'bg-white/60 hover:bg-white/80'}`;
+          dot.addEventListener('click', () => goToSlide(i));
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function updateDots() {
+        const dots = dotsContainer.children;
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].classList.toggle('bg-[#FFBD76]', i === currentIndex);
+          dots[i].classList.toggle('scale-125', i === currentIndex);
+          dots[i].classList.toggle('bg-white/60', i !== currentIndex);
+        }
+      }
+
+      function goToSlide(index) {
+        currentIndex = index;
+        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        updateDots();
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        goToSlide(currentIndex);
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        goToSlide(currentIndex);
+      }
+
+      nextBtn.addEventListener('click', nextSlide);
+      prevBtn.addEventListener('click', prevSlide);
+
+      let autoplay = setInterval(nextSlide, 7000);
+
+      const carouselElement = document.getElementById(slidesId).parentElement;
+      carouselElement.addEventListener('mouseenter', () => clearInterval(autoplay));
+      carouselElement.addEventListener('mouseleave', () => {
+        autoplay = setInterval(nextSlide, 7000);
+      });
+
+      createDots();
     }
-  }
 
-  function updateDots() {
-    const dots = dotsContainer.children;
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].classList.toggle('bg-[#FFBD76]', i === currentIndex);
-      dots[i].classList.toggle('scale-125', i === currentIndex);
-      dots[i].classList.toggle('bg-white/60', i !== currentIndex);
-    }
-  }
-
-  function goToSlide(index) {
-    currentIndex = index;
-    slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-    updateDots();
-  }
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    goToSlide(currentIndex);
-  }
-
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    goToSlide(currentIndex);
-  }
-
-  nextBtn.addEventListener('click', nextSlide);
-  prevBtn.addEventListener('click', prevSlide);
-
-  let autoplay = setInterval(nextSlide, 10000);
-
-  const carousel = document.getElementById('carousel');
-  carousel.addEventListener('mouseenter', () => clearInterval(autoplay));
-  carousel.addEventListener('mouseleave', () => {
-    autoplay = setInterval(nextSlide, 10000);
-  });
-
-  createDots();
+    initCarousel('slides-home', 'prev-home', 'next-home', 'dots-home');
+    initCarousel('slides-dinis', 'prev-dinis', 'next-dinis', 'dots-dinis');
+    initCarousel('slides-diogo', 'prev-diogo', 'next-diogo', 'dots-diogo');
+    initCarousel('slides-helio', 'prev-helio', 'next-helio', 'dots-helio');
   </script>
 </body>
 </html>
