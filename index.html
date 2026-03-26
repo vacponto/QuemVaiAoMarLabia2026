@@ -9,9 +9,8 @@
   <style>
     .tail { font-family: 'Playfair Display', serif; }
     .hand { font-family: 'Caveat', cursive; font-size: 1.75rem; line-height: 1.4; }
-    .aged { filter: sepia(25%) contrast(88%) brightness(92%) saturate(85%); }
     .torn-frame { 
-      border: 14px solid #FFF6E9; 
+      border: 14px solid #FFFFFF; 
       box-shadow: 0 15px 40px rgba(0,0,0,0.25); 
       background: white; 
       position: relative;
@@ -27,9 +26,9 @@
     .ocean-bg { background: linear-gradient(to bottom, #003F47 0%, #0A171D 100%); }
   </style>
 </head>
-<body class="bg-[#FFF6E9] text-[#0A171D] tail">
+<body class="bg-[#FFFFFF] text-[#0A171D] tail">
 
-  <nav class="fixed top-0 w-full bg-[#003F47] text-[#FFF6E9] z-50 py-6 shadow-xl">
+  <nav class="fixed top-0 w-full bg-[#003F47] text-[#FFFFFF] z-50 py-6 shadow-xl">
     <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
       <h1 class="text-3xl md:text-4xl font-bold tracking-widest">MARÉS COM VIDA</h1>
       
@@ -58,33 +57,66 @@
   </nav>
 
   <section id="home" class="min-h-screen ocean-bg flex items-center relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-32">
-    <div class="absolute inset-0 bg-[url('https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE')] bg-cover bg-center opacity-40"></div>
-    
-    <div class="max-w-6xl mx-auto px-6 text-center relative z-10 text-[#FFF6E9]">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tighter">QUEM VAI AO MAR...</h2>
-        <p class="text-3xl md:text-4xl font-light mb-12">Cultura da Pesca e Comunidades Costeiras do Algarve</p>
-        
-        <p class="text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
-          Indo além da imagem turística.<br>
-          Risco, trabalho, tradição e sobrevivência — contados por quem vive o mar todos os dias.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
-        <img src="https://fastly.picsum.photos/id/58/1280/853.jpg?hmac=YO3QnOm9TpyM5DqsJjoM4CHg8oIq4cMWLpd9ALoP908" class="aged torn-frame rounded-xl" alt="">
-        <img src="https://fastly.picsum.photos/id/50/4608/3072.jpg?hmac=E6WgCk6MBOyuRjW4bypT6y-tFXyWQfC_LjIBYPUspxE" class="aged torn-frame rounded-xl" alt="">
-        <img src="https://fastly.picsum.photos/id/124/3504/2336.jpg?hmac=B1Avp6or9Df8vpnN4kQsGNfD66j8hH3gLtootCoTw4M" class="aged torn-frame rounded-xl" alt="">
-        <img src="https://fastly.picsum.photos/id/266/4608/2592.jpg?hmac=6aICI-kg2CPyWcM8YFrpdcHPO8zrZtoY2vpZkAESt3M" class="aged torn-frame rounded-xl" alt="">
-      </div>
-
-      <a href="#diniz" class="inline-block mt-12 md:mt-20 mb-16 md:mb-24 px-10 py-4 bg-[#FFBD76] text-[#0A171D] text-lg md:text-xl font-medium rounded-full hover:scale-105 transition">
-        Conhece as histórias →
-      </a>
+  <div class="absolute inset-0 bg-[url('https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE')] bg-cover bg-center opacity-40"></div>
+  
+  <div class="max-w-6xl mx-auto px-6 text-center relative z-10 text-[#FFFFFF]">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tighter">QUEM VAI AO MAR...</h2>
+      <p class="text-3xl md:text-4xl font-light mb-12">Cultura da Pesca e Comunidades Costeiras do Algarve</p>
+      
+      <p class="text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
+        Indo além da imagem turística.<br>
+        Risco, trabalho, tradição e sobrevivência — contados por quem vive o mar todos os dias.
+      </p>
     </div>
-  </section>
 
-  <section id="enquadramento" class="py-20 md:py-32 bg-[#003F47] text-[#FFF6E9] w-full">
+    <div class="relative mt-16 mx-auto max-w-5xl">
+      <div id="carousel" class="relative overflow-hidden rounded-3xl shadow-2xl">
+        <div id="slides" class="flex transition-transform duration-700 ease-in-out">
+          <img src="/Images/DIOGO8.jpg" 
+               class="w-full flex-shrink-0 object-cover" alt="Pesca no Algarve">
+          
+          <img src="/Images/Hélio-4.jpg" 
+               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+
+          <img src="/Images/Hélio-5.jpg" 
+               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+
+          <img src="/Images/Hélio-9.jpg" 
+               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+
+          <img src="/Images/Hélio-13.jpg" 
+               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+
+          <img src="/Images/Hélio-26.jpg" 
+               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+               
+          <img src="/Images/Hélio-29.jpg" 
+               class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+          
+        </div>
+
+        <button id="prev" 
+                class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-12 h-12 flex items-center justify-center rounded-full transition text-3xl z-10">
+          ←
+        </button>
+        <button id="next" 
+                class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-12 h-12 flex items-center justify-center rounded-full transition text-3xl z-10">
+          →
+        </button>
+
+        <div id="dots" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+        </div>
+      </div>
+    </div>
+
+    <a href="#diniz" class="inline-block mt-12 md:mt-20 mb-16 md:mb-24 px-10 py-4 bg-[#FFBD76] text-[#0A171D] text-lg md:text-xl font-medium rounded-full hover:scale-105 transition">
+      Conhece as histórias →
+    </a>
+  </div>
+</section>
+
+  <section id="enquadramento" class="py-20 md:py-32 bg-[#003F47] text-[#FFFFFF] w-full">
     <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
       <div class="max-w-4xl mx-auto text-center mb-16">
         <h2 class="text-5xl md:text-6xl font-bold mb-8">Enquadramento do Projeto</h2>
@@ -97,7 +129,7 @@
       <div class="max-w-4xl mx-auto">
         <h3 class="text-3xl md:text-4xl font-bold text-center mb-10">Vídeo Highlight das Entrevistas</h3>
         <div class="bg-white text-[#0A171D] p-8 rounded-3xl torn-frame">
-          <p class="font-medium mb-4 text-center">Momentos marcantes com Diniz, Diogo e Hélio</p>
+          <p class="font-medium mb-4 text-center">Momentos marcantes com Dinis, Diogo e Hélio</p>
           <iframe width="100%" height="420" 
                   src="https://www.youtube.com/embed/Y5bqIpUjzuo" 
                   title="Highlight das Entrevistas" 
@@ -111,7 +143,7 @@
     </div>
   </section>
 
-  <section id="cultura" class="py-20 lg:py-32 w-full bg-[#FFF6E9]">
+  <section id="cultura" class="py-20 lg:py-32 w-full bg-[#FFFFFF]">
     <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-5xl md:text-6xl font-bold mb-12">A Cultura da Pesca no Algarve</h2>
@@ -126,13 +158,13 @@
     </div>
   </section>
 
-  <section id="diniz" class="py-20 md:py-28 bg-[#003F47] text-[#FFF6E9] w-full">
+  <section id="diniz" class="py-20 md:py-28 bg-[#003F47] text-[#FFFFFF] w-full">
     <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         <div class="lg:col-span-5">
           <div class="lg:sticky lg:top-28">
             <span class="text-[#FFBD76] text-2xl md:text-3xl tracking-widest">VILA REAL DE SANTO ANTÓNIO</span>
-            <h2 class="text-5xl md:text-6xl font-bold mt-3 mb-8">Diniz</h2>
+            <h2 class="text-5xl md:text-6xl font-bold mt-3 mb-8">Dinis</h2>
             
             <p class="text-xl md:text-2xl leading-relaxed mb-10">
                Cidade do Sotavento Algarvio com cerca de 19000 habitantes onde é predominante a pesca da corvina e do robalo, tendo também épocas favoráveis para a enguia.
@@ -148,15 +180,15 @@
 
         <div class="lg:col-span-7">
           <div class="grid grid-cols-2 gap-4">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Diniz - foto 1">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Diniz - foto 2">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Diniz - foto 3">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Diniz - foto 4">
+            <img src="" class="torn-frame rounded-2xl" alt="Dinis - foto 1">
+            <img src="" class="torn-frame rounded-2xl" alt="Dinis - foto 2">
+            <img src="" class="torn-frame rounded-2xl" alt="Dinis - foto 3">
+            <img src="" class="torn-frame rounded-2xl" alt="Dinis - foto 4">
           </div>
 
-          <div class="mt-12 bg-[#FFF6E9] p-8 rounded-3xl text-[#0A171D]">
+          <div class="mt-12 bg-[#FFFFFF] p-8 rounded-3xl text-[#0A171D]">
             <p class="text-[#003F47] uppercase tracking-widest text-sm mb-4">ENTREVISTA COMPLETA</p>
-            <iframe width="100%" height="420" src="" title="Entrevista Diniz" frameborder="0" allowfullscreen class="rounded-2xl"></iframe>
+            <iframe width="100%" height="420" src="" title="Entrevista Dinis" frameborder="0" allowfullscreen class="rounded-2xl"></iframe>
           </div>
         </div>
       </div>
@@ -185,13 +217,13 @@
 
         <div class="lg:col-span-7">
           <div class="grid grid-cols-2 gap-4">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Diogo - foto 1">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Diogo - foto 2">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Diogo - foto 3">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Diogo - foto 4">
+            <img src="" class="torn-frame rounded-2xl" alt="Diogo - foto 1">
+            <img src="" class="torn-frame rounded-2xl" alt="Diogo - foto 2">
+            <img src="" class="torn-frame rounded-2xl" alt="Diogo - foto 3">
+            <img src="" class="torn-frame rounded-2xl" alt="Diogo - foto 4">
           </div>
 
-          <div class="mt-12 bg-[#003F47] p-8 rounded-3xl text-[#FFF6E9]">
+          <div class="mt-12 bg-[#003F47] p-8 rounded-3xl text-[#FFFFFF]">
             <p class="uppercase tracking-widest text-sm mb-4">ENTREVISTA COMPLETA</p>
             <iframe width="100%" height="420" src="" title="Entrevista Diogo" frameborder="0" allowfullscreen class="rounded-2xl"></iframe>
           </div>
@@ -200,7 +232,7 @@
     </div>
   </section>
 
-  <section id="helio" class="py-20 md:py-28 bg-[#003F47] text-[#FFF6E9] w-full">
+  <section id="helio" class="py-20 md:py-28 bg-[#003F47] text-[#FFFFFF] w-full">
     <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         <div class="lg:col-span-5">
@@ -222,13 +254,13 @@
 
         <div class="lg:col-span-7">
           <div class="grid grid-cols-2 gap-4">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Hélio - foto 1">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Hélio - foto 2">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Hélio - foto 3">
-            <img src="" class="aged torn-frame rounded-2xl" alt="Hélio - foto 4">
+            <img src="" class="torn-frame rounded-2xl" alt="Hélio - foto 1">
+            <img src="" class="torn-frame rounded-2xl" alt="Hélio - foto 2">
+            <img src="" class="torn-frame rounded-2xl" alt="Hélio - foto 3">
+            <img src="" class="torn-frame rounded-2xl" alt="Hélio - foto 4">
           </div>
 
-          <div class="mt-12 bg-[#FFF6E9] p-8 rounded-3xl text-[#0A171D]">
+          <div class="mt-12 bg-[#FFFFFF] p-8 rounded-3xl text-[#0A171D]">
             <p class="text-[#003F47] uppercase tracking-widest text-sm mb-4">ENTREVISTA COMPLETA</p>
             <iframe width="100%" height="420" src="" title="Entrevista Hélio &amp; Filho" frameborder="0" allowfullscreen class="rounded-2xl"></iframe>
           </div>
@@ -238,12 +270,12 @@
   </section>
 
 
-  <footer class="bg-[#0A171D] text-[#FFF6E9] py-12 text-center w-full">
+  <footer class="bg-[#0A171D] text-[#FFFFFF] py-12 text-center w-full">
     <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
       <p class="text-2xl font-light">MARÉS COM VIDA © 2026</p>
       <p class="mt-4 text-lg">Projeto Grupo 12 — Cultura da Pesca e Comunidades Costeiras | Lábia 2026 | Etic Algarve</p>
       <p class="text-sm mt-8 opacity-70">
-        Inspirado nas histórias reais de Diniz, Diogo e Hélio.<br>
+        Inspirado nas histórias reais de Dinis, Diogo e Hélio.<br>
         Honra a quem vai ao mar todos os dias.
       </p>
     </div>
@@ -268,6 +300,62 @@
         }
       });
     });
+
+    const slidesContainer = document.getElementById('slides');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  const dotsContainer = document.getElementById('dots');
+
+  let currentIndex = 0;
+  const totalSlides = slidesContainer.children.length;
+
+  function createDots() {
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.className = `w-4 h-4 rounded-full transition-all ${i === 0 ? 'bg-[#FFBD76] scale-125' : 'bg-white/60 hover:bg-white/80'}`;
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateDots() {
+    const dots = dotsContainer.children;
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.toggle('bg-[#FFBD76]', i === currentIndex);
+      dots[i].classList.toggle('scale-125', i === currentIndex);
+      dots[i].classList.toggle('bg-white/60', i !== currentIndex);
+    }
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    updateDots();
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    goToSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    goToSlide(currentIndex);
+  }
+
+  nextBtn.addEventListener('click', nextSlide);
+  prevBtn.addEventListener('click', prevSlide);
+
+  let autoplay = setInterval(nextSlide, 10000);
+
+  const carousel = document.getElementById('carousel');
+  carousel.addEventListener('mouseenter', () => clearInterval(autoplay));
+  carousel.addEventListener('mouseleave', () => {
+    autoplay = setInterval(nextSlide, 10000);
+  });
+
+  createDots();
   </script>
 </body>
 </html>
