@@ -43,6 +43,7 @@
       overflow: hidden;
       box-shadow: 0 20px 35px -10px rgba(0,0,0,0.3);
       transition: transform 0.3s ease;
+      cursor: pointer;
     }
     .interview-media:hover {
       transform: scale(1.01);
@@ -69,19 +70,79 @@
       border-radius: 1.5rem;
       box-shadow: 0 15px 30px rgba(0,0,0,0.15);
     }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content {
+      max-width: 95%;
+      max-height: 95vh;
+      position: relative;
+    }
+    .modal-image {
+      width: 100%;
+      height: auto;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 1rem;
+    }
+    .modal-close {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      background: #FFBD76;
+      color: #0A171D;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .modal-prev, .modal-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 189, 118, 0.9);
+      color: #0A171D;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .modal-prev { left: -25px; }
+    .modal-next { right: -25px; }
   </style>
 </head>
 <body class="bg-[#FFFFFF] text-[#0A171D] tail">
 
   <nav class="fixed top-0 w-full bg-[#003F47] text-[#FFFFFF] z-50 py-6 shadow-xl">
     <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-      <h1 class="text-3xl md:text-4xl font-bold tracking-widest">MARÉS COM VIDA</h1>
+      <h1 class="text-3xl md:text-4xl font-bold tracking-widest">QUEM VAI AO MAR...</h1>
       
       <div class="hidden md:flex gap-8 text-lg font-medium">
         <a href="#home" class="hover:text-[#FFBD76] transition">Início</a>
         <a href="#enquadramento" class="hover:text-[#FFBD76] transition">Enquadramento</a>
         <a href="#cultura" class="hover:text-[#FFBD76] transition">Cultura</a>
-        <a href="#diniz" class="hover:text-[#FFBD76] transition">Vila Real</a>
+        <a href="#diniz" class="hover:text-[#FFBD76] transition">V.R.S. António</a>
         <a href="#diogo" class="hover:text-[#FFBD76] transition">Portimão</a>
         <a href="#helio" class="hover:text-[#FFBD76] transition">Olhão</a>
       </div>
@@ -94,7 +155,7 @@
         <a href="#home" class="hover:text-[#FFBD76] transition">Início</a>
         <a href="#enquadramento" class="hover:text-[#FFBD76] transition">Enquadramento</a>
         <a href="#cultura" class="hover:text-[#FFBD76] transition">Cultura</a>
-        <a href="#diniz" class="hover:text-[#FFBD76] transition">Vila Real</a>
+        <a href="#diniz" class="hover:text-[#FFBD76] transition">V.R.S. António</a>
         <a href="#diogo" class="hover:text-[#FFBD76] transition">Portimão</a>
         <a href="#helio" class="hover:text-[#FFBD76] transition">Olhão</a>
       </div>
@@ -106,7 +167,7 @@
     
     <div class="max-w-6xl mx-auto px-6 text-center relative z-10 text-[#FFFFFF]">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tighter">QUEM VAI AO MAR...</h2>
+        <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tighter">MARÉS COM VIDA</h2>
         <p class="text-2xl md:text-3xl font-light mb-8">Cultura da Pesca e Comunidades Costeiras do Algarve</p>
         
         <p class="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
@@ -197,12 +258,12 @@
 
           <div class="mt-12">
             <div class="interview-media">
-              <div id="carousel-dinis" class="relative overflow-hidden rounded-2xl shadow-xl bg-white">
+              <div id="carousel-dinis" class="relative overflow-hidden rounded-2xl shadow-xl bg-white" data-modal="dinis">
                 <div id="slides-dinis" class="flex transition-transform duration-700 ease-in-out">
-                  <img src="/Images/tony-32.jpg" class="w-full flex-shrink-0 object-cover" alt="Dinis">
-                  <img src="/Images/tony-19.jpg" class="w-full flex-shrink-0 object-cover" alt="Dinis">
-                  <img src="/Images/tony.jpg" class="w-full flex-shrink-0 object-cover" alt="Dinis">
-                  <img src="/Images/tony-20.jpg" class="w-full flex-shrink-0 object-cover" alt="Dinis">
+                  <img src="/Images/tony-32.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Dinis" data-index="0">
+                  <img src="/Images/tony-19.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Dinis" data-index="1">
+                  <img src="/Images/tony.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Dinis" data-index="2">
+                  <img src="/Images/tony-20.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Dinis" data-index="3">
                 </div>
                 <button id="prev-dinis" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">←</button>
                 <button id="next-dinis" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">→</button>
@@ -250,12 +311,12 @@
 
           <div class="mt-12">
             <div class="interview-media">
-              <div id="carousel-diogo" class="relative overflow-hidden rounded-2xl shadow-xl">
+              <div id="carousel-diogo" class="relative overflow-hidden rounded-2xl shadow-xl" data-modal="diogo">
                 <div id="slides-diogo" class="flex transition-transform duration-700 ease-in-out">
-                  <img src="/Images/DIOGO1.jpg" class="w-full flex-shrink-0 object-cover" alt="Diogo">
-                  <img src="/Images/tony-42.jpg" class="w-full flex-shrink-0 object-cover" alt="Diogo">
-                  <img src="/Images/tony-40.jpg" class="w-full flex-shrink-0 object-cover" alt="Diogo">
-                  <img src="/Images/DIOGO6.jpg" class="w-full flex-shrink-0 object-cover" alt="Diogo">
+                  <img src="/Images/DIOGO1.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Diogo" data-index="0">
+                  <img src="/Images/tony-42.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Diogo" data-index="1">
+                  <img src="/Images/tony-40.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Diogo" data-index="2">
+                  <img src="/Images/DIOGO6.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Diogo" data-index="3">
                 </div>
                 <button id="prev-diogo" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">←</button>
                 <button id="next-diogo" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">→</button>
@@ -303,12 +364,12 @@
 
           <div class="mt-12">
             <div class="interview-media">
-              <div id="carousel-helio" class="relative overflow-hidden rounded-2xl shadow-xl bg-white">
+              <div id="carousel-helio" class="relative overflow-hidden rounded-2xl shadow-xl" data-modal="helio">
                 <div id="slides-helio" class="flex transition-transform duration-700 ease-in-out">
-                  <img src="/Images/Hélio-16.jpg" class="w-full flex-shrink-0 object-cover" alt="Hélio">
-                  <img src="/Images/Hélio-12.jpg" class="w-full flex-shrink-0 object-cover" alt="Hélio">
-                  <img src="/Images/Hélio-1.jpg" class="w-full flex-shrink-0 object-cover" alt="Hélio">
-                  <img src="/Images/Hélio-20.jpg" class="w-full flex-shrink-0 object-cover" alt="Hélio">
+                  <img src="/Images/Hélio-16.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Hélio" data-index="0">
+                  <img src="/Images/Hélio-12.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Hélio" data-index="1">
+                  <img src="/Images/Hélio-1.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Hélio" data-index="2">
+                  <img src="/Images/Hélio-20.jpg" class="w-full flex-shrink-0 object-cover modal-trigger" alt="Hélio" data-index="3">
                 </div>
                 <button id="prev-helio" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">←</button>
                 <button id="next-helio" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">→</button>
@@ -341,6 +402,15 @@
       </div>
     </div>
   </section>
+
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">×</span>
+      <button class="modal-prev">←</button>
+      <img id="modalImage" class="modal-image" src="" alt="">
+      <button class="modal-next">→</button>
+    </div>
+  </div>
 
   <footer class="bg-[#0A171D] text-[#FFFFFF] py-12 text-center w-full">
     <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
@@ -469,6 +539,66 @@
     initCarousel('slides-dinis', 'prev-dinis', 'next-dinis', 'dots-dinis');
     initCarousel('slides-diogo', 'prev-diogo', 'next-diogo', 'dots-diogo');
     initCarousel('slides-helio', 'prev-helio', 'next-helio', 'dots-helio');
+
+    let currentModalImages = [];
+    let currentModalIndex = 0;
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalClose = document.querySelector('.modal-close');
+    const modalPrev = document.querySelector('.modal-prev');
+    const modalNext = document.querySelector('.modal-next');
+
+    function openModal(images, index) {
+      currentModalImages = images;
+      currentModalIndex = index;
+      modalImage.src = images[index];
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'visible';
+    }
+
+    function showModalImage(index) {
+      if (index < 0) index = currentModalImages.length - 1;
+      if (index >= currentModalImages.length) index = 0;
+      currentModalIndex = index;
+      modalImage.src = currentModalImages[index];
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    modalPrev.addEventListener('click', () => showModalImage(currentModalIndex - 1));
+    modalNext.addEventListener('click', () => showModalImage(currentModalIndex + 1));
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (modal.style.display === 'flex') {
+        if (e.key === 'Escape') {
+          closeModal();
+        } else if (e.key === 'ArrowRight') {
+          showModalImage(currentModalIndex + 1);
+        } else if (e.key === 'ArrowLeft') {
+          showModalImage(currentModalIndex - 1);
+        }
+      }
+    });
+
+    document.querySelectorAll('.modal-trigger').forEach(img => {
+      img.addEventListener('click', function() {
+        const carouselContainer = this.closest('.interview-media').querySelector('div[id^="slides-"]');
+        if (!carouselContainer) return;
+
+        const allImages = Array.from(carouselContainer.querySelectorAll('img')).map(img => img.src);
+        const clickedIndex = parseInt(this.getAttribute('data-index'));
+        
+        openModal(allImages, clickedIndex);
+      });
+    });
   </script>
 </body>
 </html>
