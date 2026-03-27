@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MARÉS COM VIDA | Quem Vai ao Mar</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Playfair+Display+SC&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Playfair+Display+SC&family=Caveat:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     .tail { font-family: 'Playfair Display', serif; }
     .hand { font-family: 'Caveat', cursive; font-size: 1.75rem; line-height: 1.4; }
+    .montserrat { font-family: 'Montserrat', sans-serif; }
+    .raleway { font-family: 'Raleway', sans-serif; }
     .torn-frame { 
       border: 14px solid #FFFFFF; 
       box-shadow: 0 15px 40px rgba(0,0,0,0.25); 
@@ -44,6 +46,22 @@
     }
     .interview-media:hover {
       transform: scale(1.01);
+    }
+    .interview-video-container {
+      position: relative;
+      width: 100%;
+      padding-top: 75%;
+      background: #000;
+      border-radius: 1.5rem;
+      overflow: hidden;
+    }
+    .interview-video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
     .quote-box {
       background-size: cover;
@@ -100,13 +118,14 @@
       <div class="relative mt-10 mx-auto home-carousel-container">
         <div id="carousel-home" class="relative overflow-hidden rounded-3xl shadow-2xl">
           <div id="slides-home" class="flex transition-transform duration-700 ease-in-out">
-            <img src="/Images/DIOGO8.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Pesca no Algarve">
-            <img src="/Images/Hélio-4.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Barco de pesca">
-            <img src="/Images/Hélio-5.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Barco de pesca">
-            <img src="/Images/Hélio-9.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Barco de pesca">
-            <img src="/Images/Hélio-13.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Barco de pesca">
-            <img src="/Images/Hélio-26.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Barco de pesca">
-            <img src="/Images/Hélio-29.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Barco de pesca">
+            <img src="/Images/DIOGO8.jpg" class="w-full flex-shrink-0 object-cover" alt="Pesca no Algarve">
+            <img src="/Images/Hélio-4.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+            <img src="/Images/Hélio-5.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+            <img src="/Images/Hélio-9.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+            <img src="/Images/Hélio-13.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+            <img src="/Images/Hélio-26.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+            <img src="/Images/Hélio-29.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
+            <img src="/Images/tony-26.jpg" class="w-full flex-shrink-0 object-cover" alt="Barco de pesca">
           </div>
 
           <button id="prev-home" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full text-2xl md:text-3xl z-10">←</button>
@@ -126,7 +145,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
       <div class="max-w-4xl mx-auto text-center mb-16">
         <h2 class="text-5xl md:text-6xl font-bold mb-8">Enquadramento do Projeto</h2>
-        <p class="text-xl md:text-2xl leading-relaxed">
+        <p class="montserrat text-xl md:text-2xl leading-relaxed">
           O projeto “Marés com Vida” visa desmistificar e revelar o lado real da pesca algarvia, ressaltando as verdades duras e mostrar que viver do que nos rodeia não é um mar de rosas. 
           Tão importante como a primeira parte da nossa premissa é honrar e enaltecer todos que foram, vão e voltam, ou que infelizmente nunca tiveram a chance de voltar do mar.
         </p>
@@ -153,18 +172,18 @@
     <div class="max-w-screen-2xl mx-auto px-6 lg:px-12">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-5xl md:text-6xl font-bold mb-12">A Cultura da Pesca no Algarve</h2>
-        <p class="text-xl lg:text-2xl leading-relaxed">
+        <p class="montserrat text-xl lg:text-2xl leading-relaxed">
           Do barlavento ao sotavento, a pesca sempre foi uma atividade fulcral no Algarve.
           Com origens sobretudo artesanais, a pesca era realizada em pequenas embarcações frágeis, com técnicas tradicionais e algo rudimentares passadas de geração em geração.
         </p>
-        <p class="text-xl md:text-2xl leading-relaxed mt-8">
+        <p class="montserrat text-xl md:text-2xl leading-relaxed mt-8">
           Hoje em dia, a pesca ainda é uma atividade predominante e de grande importância por todo o Algarve, adaptada à nova legislação e aos desafios da preservação marítima.
         </p>
       </div>
     </div>
   </section>
 
- <section id="diniz" class="py-20 md:py-32 bg-[#003F47] text-white">
+  <section id="diniz" class="py-20 md:py-32 bg-[#003F47] text-white">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
@@ -173,17 +192,17 @@
           <p class="text-3xl mt-2 text-white">Vila Real de Santo António</p>
           
           <div class="mt-8 space-y-1 text-lg">
-            <p class="tail text-white">Cidade do sotavento algarvio com cerca de 19000 habitantes onde é predominante a pesca da corvina e do robalo, tendo também épocas favoráveis para a enguia.</p>
+            <p class="montserrat text-white">Cidade do sotavento algarvio com cerca de 19000 habitantes onde é predominante a pesca da corvina e do robalo, tendo também épocas favoráveis para a enguia.</p>
           </div>
 
           <div class="mt-12">
             <div class="interview-media">
               <div id="carousel-dinis" class="relative overflow-hidden rounded-2xl shadow-xl bg-white">
                 <div id="slides-dinis" class="flex transition-transform duration-700 ease-in-out">
-                  <img src="/Images/tony-32.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Dinis">
-                  <img src="/Images/tony-19.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Dinis">
-                  <img src="/Images/tony.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Dinis">
-                  <img src="/Images/tony-20.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Dinis">
+                  <img src="/Images/tony-32.jpg" class="w-full flex-shrink-0 object-cover" alt="Dinis">
+                  <img src="/Images/tony-19.jpg" class="w-full flex-shrink-0 object-cover" alt="Dinis">
+                  <img src="/Images/tony.jpg" class="w-full flex-shrink-0 object-cover" alt="Dinis">
+                  <img src="/Images/tony-20.jpg" class="w-full flex-shrink-0 object-cover" alt="Dinis">
                 </div>
                 <button id="prev-dinis" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">←</button>
                 <button id="next-dinis" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">→</button>
@@ -194,21 +213,22 @@
         </div>
 
         <div class="space-y-8">
-          <div class="interview-media bg-white aspect-video rounded-2xl flex items-center justify-center relative overflow-hidden shadow-2xl">
-            <iframe 
-              width="100%" 
-              height="100%" 
-              src="" 
-              title="Entrevista Dinis" 
-              frameborder="0" 
-              allowfullscreen 
-              class="rounded-2xl">
-            </iframe>
+          <div class="interview-media">
+            <div class="interview-video-container">
+              <iframe 
+                src="https://www.youtube.com/embed/Y5bqIpUjzuo" 
+                title="Entrevista Dinis" 
+                frameborder="0" 
+                allowfullscreen 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin">
+              </iframe>
+            </div>
           </div>
 
           <div class="quote-box bg-[url(Images/Paper.jpg)] p-8 md:p-10 max-w-md mx-auto lg:mx-0">
             <p class="hand text-[#0A171D] italic text-2xl md:text-3xl">
-              “O mar não me dá dinheiro fácil… mas dá-me uma liberdade que nenhum patrão consegue tirar.”
+              “Gosto de estar no mar e sentir aquela paz… gostava que isso não se perdesse.”
             </p>
           </div>
         </div>
@@ -225,17 +245,17 @@
           <p class="text-3xl mt-2 text-[#003F47]">Portimão</p>
           
           <div class="mt-8 space-y-1 text-lg">
-            <p class="tail text-[#003F47]">Situada no barlavento algarvio, Portimão é das maiores cidades algarvias com cerca de 60000 habitantes. Aqui a pesca é das mais diversificadas da região, mas destaca-se a pesca da sardinha, juntamente com a do linguado e do polvo.</p>
+            <p class="montserrat text-[#003F47]">Situada no barlavento algarvio, Portimão é das maiores cidades algarvias com cerca de 60000 habitantes. Aqui a pesca é das mais diversificadas da região, mas destaca-se a pesca da sardinha, juntamente com a do linguado e do polvo.</p>
           </div>
 
           <div class="mt-12">
             <div class="interview-media">
               <div id="carousel-diogo" class="relative overflow-hidden rounded-2xl shadow-xl">
                 <div id="slides-diogo" class="flex transition-transform duration-700 ease-in-out">
-                  <img src="/Images/DIOGO1.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Diogo">
-                  <img src="/Images/tony-42.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Diogo">
-                  <img src="/Images/tony-40.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Diogo">
-                  <img src="/Images/DIOGO6.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Diogo">
+                  <img src="/Images/DIOGO1.jpg" class="w-full flex-shrink-0 object-cover" alt="Diogo">
+                  <img src="/Images/tony-42.jpg" class="w-full flex-shrink-0 object-cover" alt="Diogo">
+                  <img src="/Images/tony-40.jpg" class="w-full flex-shrink-0 object-cover" alt="Diogo">
+                  <img src="/Images/DIOGO6.jpg" class="w-full flex-shrink-0 object-cover" alt="Diogo">
                 </div>
                 <button id="prev-diogo" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">←</button>
                 <button id="next-diogo" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">→</button>
@@ -246,21 +266,22 @@
         </div>
 
         <div class="space-y-8">
-          <div class="interview-media bg-[#003F47] aspect-video rounded-2xl flex items-center justify-center relative overflow-hidden shadow-2xl">
-            <iframe 
-              width="100%" 
-              height="100%" 
-              src="" 
-              title="Entrevista Diogo" 
-              frameborder="0" 
-              allowfullscreen 
-              class="rounded-2xl">
-            </iframe>
+          <div class="interview-media">
+            <div class="interview-video-container">
+              <iframe 
+                src="https://www.youtube.com/embed/Y5bqIpUjzuo" 
+                title="Entrevista Diogo" 
+                frameborder="0" 
+                allowfullscreen 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin">
+              </iframe>
+            </div>
           </div>
 
           <div class="quote-box bg-[url(Images/Paper.jpg)] p-8 md:p-10 max-w-md mx-auto lg:mx-0">
             <p class="hand text-[#0A171D] italic text-2xl md:text-3xl">
-              “O mar é grande, mas o meu lugar nele é pequeno e certo.”
+              “Não me vejo a fazer outra coisa para além de ir para o mar.”
             </p>
           </div>
         </div>
@@ -277,17 +298,17 @@
           <p class="text-3xl mt-2 text-white">Olhão</p>
           
           <div class="mt-8 space-y-1 text-lg">
-            <p class="tail text-white">O maior centro piscatório algarvio, Olhão, conta com aproximadamente 45000 habitantes. Situada em plena Ria Formosa, a costa olhanense é rica em todo o tipo de marisco, polvo e choco, e também de douradas e sargos.</p>
+            <p class="montserrat text-white">O maior centro piscatório algarvio, Olhão, conta com aproximadamente 45000 habitantes. Situada em plena Ria Formosa, a costa olhanense é rica em todo o tipo de marisco, polvo e choco, e também de douradas e sargos.</p>
           </div>
 
           <div class="mt-12">
             <div class="interview-media">
               <div id="carousel-helio" class="relative overflow-hidden rounded-2xl shadow-xl bg-white">
                 <div id="slides-helio" class="flex transition-transform duration-700 ease-in-out">
-                  <img src="/Images/Hélio-16.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Hélio">
-                  <img src="/Images/Hélio-12.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Hélio">
-                  <img src="/Images/Hélio-1.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Hélio">
-                  <img src="/Images/Hélio-20.jpg" class="w-full flex-shrink-0 object-cover aspect-video" alt="Hélio">
+                  <img src="/Images/Hélio-16.jpg" class="w-full flex-shrink-0 object-cover" alt="Hélio">
+                  <img src="/Images/Hélio-12.jpg" class="w-full flex-shrink-0 object-cover" alt="Hélio">
+                  <img src="/Images/Hélio-1.jpg" class="w-full flex-shrink-0 object-cover" alt="Hélio">
+                  <img src="/Images/Hélio-20.jpg" class="w-full flex-shrink-0 object-cover" alt="Hélio">
                 </div>
                 <button id="prev-helio" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">←</button>
                 <button id="next-helio" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">→</button>
@@ -298,21 +319,22 @@
         </div>
 
         <div class="space-y-8">
-          <div class="interview-media bg-white aspect-video rounded-2xl flex items-center justify-center relative overflow-hidden shadow-2xl">
-            <iframe 
-              width="100%" 
-              height="100%" 
-              src="" 
-              title="Entrevista Hélio" 
-              frameborder="0" 
-              allowfullscreen 
-              class="rounded-2xl">
-            </iframe>
+          <div class="interview-media">
+            <div class="interview-video-container">
+              <iframe 
+                src="https://www.youtube.com/embed/Y5bqIpUjzuo" 
+                title="Entrevista Hélio" 
+                frameborder="0" 
+                allowfullscreen 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin">
+              </iframe>
+            </div>
           </div>
 
           <div class="quote-box bg-[url(Images/Paper.jpg)] p-8 md:p-10 max-w-md mx-auto lg:mx-0">
             <p class="hand text-[#0A171D] italic text-2xl md:text-3xl">
-              “O mar é o mesmo para os dois… só o barco é que mudou.”
+              “Vai-se perdendo muito o ensino, a cultura da pesca, o saber fazer as artes… um dia muitas pessoas não vão saber como é que se faz.”
             </p>
           </div>
         </div>
@@ -332,7 +354,6 @@
   </footer>
 
   <script>
-
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
 
@@ -360,10 +381,7 @@
 
     function initCarousel(slidesId, prevId, nextId, dotsId) {
       const slidesContainer = document.getElementById(slidesId);
-      if (!slidesContainer) {
-        console.warn(`Slides container ${slidesId} não encontrado`);
-        return;
-      }
+      if (!slidesContainer) return;
       const prevBtn = document.getElementById(prevId);
       const nextBtn = document.getElementById(nextId);
       const dotsContainer = document.getElementById(dotsId);
@@ -380,102 +398,71 @@
         slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
       }
 
-      if (dotsContainer) {
-        function createDots() {
-          dotsContainer.innerHTML = '';
-          for (let i = 0; i < totalSlides; i++) {
-            const dot = document.createElement('button');
-            dot.className = `w-3 h-3 md:w-4 md:h-4 rounded-full transition-all ${i === 0 ? 'bg-[#FFBD76] scale-125' : 'bg-gray-400 hover:bg-gray-300'}`;
-            dot.addEventListener('click', () => goToSlide(i));
-            dotsContainer.appendChild(dot);
-          }
+      function createDots() {
+        if (!dotsContainer) return;
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+          const dot = document.createElement('button');
+          dot.className = `w-3 h-3 md:w-4 md:h-4 rounded-full transition-all ${i === 0 ? 'bg-[#FFBD76] scale-125' : 'bg-gray-400 hover:bg-gray-300'}`;
+          dot.addEventListener('click', () => goToSlide(i));
+          dotsContainer.appendChild(dot);
         }
-        
-        function updateDots() {
-          const dots = dotsContainer.children;
-          for (let i = 0; i < dots.length; i++) {
-            dots[i].classList.toggle('bg-[#FFBD76]', i === currentIndex);
-            dots[i].classList.toggle('scale-125', i === currentIndex);
-            dots[i].classList.toggle('bg-gray-400', i !== currentIndex);
-            dots[i].classList.toggle('hover:bg-gray-300', i !== currentIndex);
-          }
-        }
-        
-        function goToSlide(index) {
-          if (index < 0) index = 0;
-          if (index >= totalSlides) index = totalSlides - 1;
-          currentIndex = index;
-          const slideWidth = slidesContainer.parentElement.clientWidth;
-          slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-          if (updateDots) updateDots();
-        }
-        
-        window.addEventListener('resize', () => {
-          const slideWidth = slidesContainer.parentElement.clientWidth;
-          slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-          for (let i = 0; i < slidesContainer.children.length; i++) {
-            slidesContainer.children[i].style.width = `${slideWidth}px`;
-          }
-        });
-        
-        function nextSlide() {
-          let newIndex = currentIndex + 1;
-          if (newIndex >= totalSlides) newIndex = 0;
-          goToSlide(newIndex);
-        }
-        
-        function prevSlide() {
-          let newIndex = currentIndex - 1;
-          if (newIndex < 0) newIndex = totalSlides - 1;
-          goToSlide(newIndex);
-        }
-        
-        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-        
-        let autoplay = setInterval(nextSlide, 7000);
-        const carouselElement = document.getElementById(slidesId).parentElement;
-        if (carouselElement) {
-          carouselElement.addEventListener('mouseenter', () => clearInterval(autoplay));
-          carouselElement.addEventListener('mouseleave', () => {
-            autoplay = setInterval(nextSlide, 7000);
-          });
-        }
-        
-        createDots();
-        setSlideWidth();
-      } else {
-        function goToSlide(index) {
-          currentIndex = index;
-          const slideWidth = slidesContainer.parentElement.clientWidth;
-          slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-        }
-        
-        window.addEventListener('resize', () => {
-          const slideWidth = slidesContainer.parentElement.clientWidth;
-          slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-          for (let i = 0; i < slidesContainer.children.length; i++) {
-            slidesContainer.children[i].style.width = `${slideWidth}px`;
-          }
-        });
-        
-        function nextSlide() {
-          let newIndex = currentIndex + 1;
-          if (newIndex >= totalSlides) newIndex = 0;
-          goToSlide(newIndex);
-        }
-        
-        function prevSlide() {
-          let newIndex = currentIndex - 1;
-          if (newIndex < 0) newIndex = totalSlides - 1;
-          goToSlide(newIndex);
-        }
-        
-        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-        
-        setSlideWidth();
       }
+      
+      function updateDots() {
+        if (!dotsContainer) return;
+        const dots = dotsContainer.children;
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].classList.toggle('bg-[#FFBD76]', i === currentIndex);
+          dots[i].classList.toggle('scale-125', i === currentIndex);
+          dots[i].classList.toggle('bg-gray-400', i !== currentIndex);
+          dots[i].classList.toggle('hover:bg-gray-300', i !== currentIndex);
+        }
+      }
+      
+      function goToSlide(index) {
+        if (index < 0) index = 0;
+        if (index >= totalSlides) index = totalSlides - 1;
+        currentIndex = index;
+        const slideWidth = slidesContainer.parentElement.clientWidth;
+        slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        updateDots();
+      }
+      
+      window.addEventListener('resize', () => {
+        const slideWidth = slidesContainer.parentElement.clientWidth;
+        slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        for (let i = 0; i < slidesContainer.children.length; i++) {
+          slidesContainer.children[i].style.width = `${slideWidth}px`;
+        }
+      });
+      
+      function nextSlide() {
+        let newIndex = currentIndex + 1;
+        if (newIndex >= totalSlides) newIndex = 0;
+        goToSlide(newIndex);
+      }
+      
+      function prevSlide() {
+        let newIndex = currentIndex - 1;
+        if (newIndex < 0) newIndex = totalSlides - 1;
+        goToSlide(newIndex);
+      }
+      
+      if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+      if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+      
+      let autoplay = setInterval(nextSlide, 7000);
+      const carouselElement = slidesContainer.parentElement;
+      if (carouselElement) {
+        carouselElement.addEventListener('mouseenter', () => clearInterval(autoplay));
+        carouselElement.addEventListener('mouseleave', () => {
+          autoplay = setInterval(nextSlide, 7000);
+        });
+      }
+      
+      createDots();
+      setSlideWidth();
     }
 
     initCarousel('slides-home', 'prev-home', 'next-home', 'dots-home');
